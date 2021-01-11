@@ -1,3 +1,4 @@
+#include "swap.h"
 #include <iostream>
 
 int main() {
@@ -7,9 +8,7 @@ int main() {
     std::cout << "a:" << a << std::endl;
     std::cout << "b:" << b << std::endl;
 
-    a = a + b;
-    b = b - a;
-    b = a - b;
+   swap(a, b);
 
     std::cout << std::endl << "Swap" << std::endl;
     std::cout << "a:" << a << std::endl;
